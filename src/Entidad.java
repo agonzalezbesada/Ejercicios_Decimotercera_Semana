@@ -1,14 +1,32 @@
 public class Entidad {
     private String nombre;
-    private int vida = 100;
-    private int ataque = 15;
-    private int defensa = 10;
+    private int vida;
+    private int ataque;
+    private int defensa;
+
+
+    Entidad() {
+
+    }
+
+    Entidad(String nombre, int vida, int ataque, int defensa) {
+        this.nombre=nombre;
+        this.vida=vida;
+        this.ataque=ataque;
+        this.defensa=defensa;
+    }
+
+
+    Entidad(int vida, int ataque, int defensa) {
+
+    }
 
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre() {
+        this.nombre=nombre;
     }
 
     public int getVida() {
@@ -16,6 +34,7 @@ public class Entidad {
     }
 
     public void setVida() {
+        this.vida=vida;
     }
 
     public int getAtaque() {
@@ -23,6 +42,7 @@ public class Entidad {
     }
 
     public void setAtaque() {
+        this.ataque=ataque;
     }
 
     public int getDefensa() {
@@ -30,6 +50,7 @@ public class Entidad {
     }
 
     public void setDefensa() {
+        this.defensa=defensa;
     }
 
     public int turno (int accion) {

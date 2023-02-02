@@ -5,8 +5,8 @@ public class Main {
         Scanner guardar = new Scanner (System.in);
 
 
-        Jugador jugador1 = new Jugador();
-        Enemigo enemigo1 = new Enemigo();
+        Jugador jugador1 = new Jugador("Jugador", 100, 15, 10, 50, 6);
+        Enemigo enemigo1 = new Enemigo("Enemigo", 100, 15, 10, 12);
 
         Entidad [] entidad1 = new Entidad[2];
 
